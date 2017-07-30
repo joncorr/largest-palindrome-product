@@ -16,7 +16,7 @@
          (= firstHalf secondHalf)))
 
 
-(defn bigOh2 []
+(defn find-palindrome []
   (loop [number 100 palindromes[]]
    (if (= number 999)
       palindromes
@@ -30,4 +30,4 @@
 (defn -main
   [& args]
  (prn (str "The largest palindrome resulting from the product of two three-digit numbers is "
-  (last (sort (bigOh2))))))
+  (last (sort (find-palindrome))))))
